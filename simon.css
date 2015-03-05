@@ -146,8 +146,8 @@ td.date {
 }
 
 .container {
-    width: 600px;
-    margin: auto;
+    max-width: 40em;
+    margin: 0 auto;
     }
 
 #title {
