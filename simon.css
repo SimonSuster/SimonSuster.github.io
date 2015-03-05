@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300italic,700italic,300,700);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
+
+body {
+ # padding:40px;
+  font-family: 'Fira Sans', sans;
+  color:rgb(20,20,20);
+  #font-weight:300;
+}
+
+#body {
+#    background: #fff;
+#    color: #444;
+#    font-family: Lato, sans;
+#    font-size: 14px;
+#    padding: 40px;
+#    margin-top: 40px;
+#    padding-top: 0px;
+#}
+
+.separator {
+    width: 75%;
+#    border-bottom: 2px solid #D6E3B5;
+    border-bottom: 2px solid #FF7A00;
+}
+header {
+    position: relative;
+}
+
+header nav {
+    font-size: 110%;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 0.15em;
+    vertical-align: middle;
+}
+
+h1 {
+  #  font-size: 15pt;
+    font-weight: normal;
+#    text-align: left;
+    margin-bottom: 0px;
+#    padding-top: 5px;
+    # padding-bottom: 20px;
+#    padding-bottom: -80px;
+#    padding-left: 2px;
+#    border-top: 1.5px solid #FF7A00;
+}
+
+h2 {
+   # font-size: 13pt;
+    font-weight: lighter;
+    text-align: left;
+#    margin-bottom: 60px;
+#    margin-top: -20px;
+    padding-top: 6px;
+#    padding-bottom: 10px;
+#    border-top: 3px solid #D6E3B5;
+#    border-bottom: 1px solid #D6E3B5;
+}
+
+h3 {
+    #font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 10px;
+#    border-top: 1px solid #D6E3B5;
+}
+/*
+a.std:link {
+    background: #D6E3B5;
+    text-decoration: none;
+    color: #444;
+         padding-left: 1px;
+    padding-right: 1px;
+}
+
+a.std:visited { 
+            background: #9f9f9f;
+            color: #fff;
+}
+*/
+
+a {
+font-weight: ;
+text-decoration: none;
+}
+a.std:link {
+ color: #0C36B3;
+ text-decoration: none;
+}
+
+a.std:visited { 
+            color: #0C36B3;
+
+}
+
+a.bibtex:link{ 
+/*               text-decoration: none; */
+               color: #0C36B3;
+
+ }
+a.bibtex:visited{ 
+/*               text-decoration: none; */
+               color: #0C36B3;
+
+ }
+
+ul {
+    list-style: none;
+#    margin: -15px 0px 0px 0px;
+    padding: 5px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+#    border-spacing: 10;
+        margin-top: 20px;
+    #font-size: 12px;
+}
+
+td, th {
+    padding: 1px;
+}
+
+
+td.date {
+    width: 25%;
+    vertical-align: top;
+}
+
+#container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+#title {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.pubTitle {
+    /* font-weight: bold; */
+    color: #A3CD39a;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+.title {
+    font-style: italic;
+}
+
+iframe {
+    padding-top: 60px;
+}
+
+.obfuscate span { display: none; }
+
+/* .bibtex { color: maroon } */
