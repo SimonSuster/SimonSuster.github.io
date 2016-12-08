@@ -1,16 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:300italic,700italic,300,700);
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Adamina:400,700,300);
 
 body {
  # padding:40px;
-  font-family: 'Fira Sans', sans;
-  color:rgb(20,20,20);
+  font-family: 'Adamina';
+  #color:rgb(20,20,20);
   #font-weight:300;
+  background
 }
 
 #body {
-#    background: #fff;
+#    background: #cccccc;
 #    color: #444;
 #    font-family: Lato, sans;
 #    font-size: 14px;
@@ -148,6 +150,7 @@ td.date {
 .container {
     max-width: 40em;
     margin: 0 auto;
+    #background: #cccccc;
     }
 
 #title {
