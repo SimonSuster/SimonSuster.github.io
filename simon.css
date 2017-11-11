@@ -49,8 +49,8 @@ header nav li {
 }
 
 h1 {
-  #  font-size: 15pt;
-    font-weight: normal;
+    font-size: 14pt;
+    #font-weight: normal;
 #    text-align: left;
     margin-bottom: 0px;
 padding: 0px;
@@ -62,8 +62,8 @@ padding: 0px;
 }
 
 h2 {
-   # font-size: 13pt;
-    font-weight: lighter;
+   font-size: 14pt;
+    #font-weight: lighter;
     text-align: left;
 #    margin-bottom: 60px;
 #    margin-top: -20px;
