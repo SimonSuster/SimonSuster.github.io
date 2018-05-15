@@ -2,10 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Adamina:400,700,300);
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 
 body {
  # padding:40px;
-  font-family: 'Adamina';
+ # font-family: 'Adamina';
+  font-family: 'Source Sans Pro', sans-serif;
   #color:rgb(20,20,20);
   #font-weight:300;
   background
