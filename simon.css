@@ -52,10 +52,10 @@ header nav li {
 }
 
 h1 {
-    font-size: 14pt;
+    font-size: 20pt;
     #font-weight: normal;
 #    text-align: left;
-    margin-bottom: 0px;
+    margin-bottom: -20px;
 padding: 0px;
 #    padding-top: 5px;
     # padding-bottom: 20px;
@@ -65,13 +65,13 @@ padding: 0px;
 }
 
 h2 {
-   font-size: 14pt;
+   font-size: 16pt;
     #font-weight: lighter;
     text-align: left;
-#    margin-bottom: 60px;
-#    margin-top: -20px;
-    padding-top: 6px;
-#    padding-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+#    padding-top: 6px;
+#    padding-bottom: 6px;
 #    border-top: 3px solid #D6E3B5;
 #    border-bottom: 1px solid #D6E3B5;
 }
@@ -98,30 +98,27 @@ a.std:visited {
 }
 */
 
-a {
-font-weight: ;
-text-decoration: none;
-}
-a.std:link {
- color: #0C36B3;
- text-decoration: none;
+a:link {
+   text-decoration: none;
+  color: black;
+ border-bottom: 1px solid brown;
+     padding-bottom: 0px;
 }
 
-a.std:visited { 
-            color: #0C36B3;
+a:visited {
+color: black;
+ border-bottom: 1px solid brown;
+ padding-bottom: 0px;
+            /*color: #0C36B3*/;
+}
+
+
+a:hover {
+ border-bottom: 2px solid brown;
+     padding-bottom: 0px;
 
 }
 
-a.bibtex:link{ 
-/*               text-decoration: none; */
-               color: #0C36B3;
-
- }
-a.bibtex:visited{ 
-/*               text-decoration: none; */
-               color: #0C36B3;
-
- }
 
 ul {
     list-style: none;
@@ -155,6 +152,14 @@ td.date {
     margin: 0 auto;
     #background: #cccccc;
     }
+
+.intro {
+margin:auto;
+    overflow: auto;
+#    background-color: lightgreen;
+    border-bottom: 6px solid brown;
+
+}
 
 #title {
     display: block;
