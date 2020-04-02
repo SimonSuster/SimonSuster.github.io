@@ -1,16 +1,11 @@
 {
-  "entity types": [
-    {
-      "id": "Population",
-	"color":  "#FEAAAA"
-    },
-    {
-      "id": "Indication",
-	"color":  "#FEAAAA"
-    },
-    {
-	"id": "Outcome",
-	"color":  "#FEAAAA"
-    }
-  ]
+   "entity types":[
+      {"id":"Protein","color":"#AAAAFE","default":true},
+      {"id":"Regulation","color":"#AAFEAA"},
+      {"id":"Gene_expression","color":"#FEAAAA"}
+      ],
+   "relation types":[
+      {"id":"themeOf","color":"#0000FF","default":true},
+      {"id":"causeOf","color":"#FF0000"}
+   ]
 }
