@@ -1,9 +1,9 @@
-{
-  "entity types": [
-    {
-      "id": "https://www.uniprot.org/uniprot/P04216",
-      "color": "#AAAAFE",
-      "label": "Thy-1"
-    }
-  ]
-}
+"entity types":[
+      {"id":"Population","color":#FEAAAA"},
+      {"id":"Intervention","color":"#FEAAAA"},
+      {"id":"Outcome","color":"#FEAAAA"}
+      ],
+   "relation types":[
+      {"id":"themeOf","color":"#0000FF","default":true},
+      {"id":"causeOf","color":"#FF0000"}
+   ]
