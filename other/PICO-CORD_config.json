@@ -1,5 +1,5 @@
-"entity types":[
-      {"id":"Population","color":#FEAAAA", "default":true},
+{"entity types":[
+      {"id":"Population","color":#FEAAAA"},
       {"id":"Intervention","color":"#FEAAAA"},
       {"id":"Outcome","color":"#FEAAAA"}
       ],
@@ -7,3 +7,4 @@
       {"id":"themeOf","color":"#0000FF","default":true},
       {"id":"causeOf","color":"#FF0000"}
    ]
+}
