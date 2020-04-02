@@ -1,15 +1,15 @@
 {
   "entity types": [
     {
-      "label": "Population",
+      "id": "Population",
 	"color":  "#FEAAAA"
     },
     {
-      "label": "Indication",
+      "id": "Indication",
 	"color":  "#FEAAAA"
     },
     {
-	"label": "Outcome",
+	"id": "Outcome",
 	"color":  "#FEAAAA"
     }
   ]
