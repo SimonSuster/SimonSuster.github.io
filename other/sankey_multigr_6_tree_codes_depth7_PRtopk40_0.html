@@ -1,0 +1,165 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: Coronavirus, Coronavirus Infections</br><strong>Intervention</strong>: Investigative Techniques, Diagnostic Imaging, Clinical Laboratory Techniques</br><strong>Outcome</strong>:  -</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    [ "Middle East Respiratory Syndrome Coronavirus_P", "Real-Time Polymerase Chain Reaction_I", 3 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Polymerase Chain Reaction_I", 4 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Biological Assay_I", 4 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Patient Reported Outcome Measures_I", 6 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Enzyme-Linked Immunosorbent Assay_I", 1 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Reproduction_O", 1 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Nucleic Acid Amplification Techniques_O", 4 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Epidemiologic Research Design_O", 2 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Sensitivity and Specificity_O", 2 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Epidemiologic Methods_O", 4 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Nidovirales_O", 3 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Statistics as Topic_O", 3 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Hypersensitivity_O", 4 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Health Care Evaluation Mechanisms_O", 3 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Intestines_O", 1 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Epidemiologic Measurements_O", 1 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Vital Statistics_O", 1 ],
+[ "Real-Time Polymerase Chain Reaction_I", "Data Collection_O", 1 ],
+[ "Porcine epidemic diarrhea virus_P", "Real-Time Polymerase Chain Reaction_I", 2 ],
+[ "Porcine epidemic diarrhea virus_P", "Enzyme-Linked Immunosorbent Assay_I", 5 ],
+[ "Porcine epidemic diarrhea virus_P", "Polymerase Chain Reaction_I", 1 ],
+[ "Porcine epidemic diarrhea virus_P", "Reverse Transcriptase Polymerase Chain Reaction_I", 1 ],
+[ "Polymerase Chain Reaction_I", "Hypersensitivity_O", 2 ],
+[ "Polymerase Chain Reaction_I", "Reproduction_O", 1 ],
+[ "Polymerase Chain Reaction_I", "Nucleic Acid Amplification Techniques_O", 3 ],
+[ "Polymerase Chain Reaction_I", "Epidemiologic Measurements_O", 1 ],
+[ "Polymerase Chain Reaction_I", "Vital Statistics_O", 1 ],
+[ "Polymerase Chain Reaction_I", "Data Collection_O", 1 ],
+[ "Polymerase Chain Reaction_I", "Epidemiologic Methods_O", 3 ],
+[ "Polymerase Chain Reaction_I", "Genome_O", 1 ],
+[ "Polymerase Chain Reaction_I", "Intestines_O", 1 ],
+[ "Polymerase Chain Reaction_I", "Epidemiologic Research Design_O", 1 ],
+[ "Polymerase Chain Reaction_I", "Sensitivity and Specificity_O", 1 ],
+[ "Polymerase Chain Reaction_I", "Nidovirales_O", 2 ],
+[ "Polymerase Chain Reaction_I", "Statistics as Topic_O", 2 ],
+[ "Polymerase Chain Reaction_I", "Health Care Evaluation Mechanisms_O", 2 ],
+[ "Polymerase Chain Reaction_I", "Bacteria_O", 1 ],
+[ "Biological Assay_I", "Hypersensitivity_O", 2 ],
+[ "Biological Assay_I", "Nidovirales_O", 2 ],
+[ "Biological Assay_I", "Epidemiologic Measurements_O", 2 ],
+[ "Biological Assay_I", "Vital Statistics_O", 2 ],
+[ "Biological Assay_I", "Epidemiologic Methods_O", 3 ],
+[ "Biological Assay_I", "Data Collection_O", 2 ],
+[ "Biological Assay_I", "Nucleic Acid Amplification Techniques_O", 1 ],
+[ "Biological Assay_I", "Statistics as Topic_O", 1 ],
+[ "Biological Assay_I", "Health Care Evaluation Mechanisms_O", 1 ],
+[ "Betacoronavirus 1_P", "Polymerase Chain Reaction_I", 2 ],
+[ "Betacoronavirus 1_P", "Real-Time Polymerase Chain Reaction_I", 3 ],
+[ "Betacoronavirus 1_P", "Patient Reported Outcome Measures_I", 1 ],
+[ "Betacoronavirus 1_P", "Biological Assay_I", 1 ],
+[ "Alphacoronavirus 1_P", "Real-Time Polymerase Chain Reaction_I", 4 ],
+[ "Alphacoronavirus 1_P", "Polymerase Chain Reaction_I", 3 ],
+[ "Alphacoronavirus 1_P", "Enzyme-Linked Immunosorbent Assay_I", 1 ],
+[ "Alphacoronavirus 1_P", "Reverse Transcriptase Polymerase Chain Reaction_I", 1 ],
+[ "Alphacoronavirus 1_P", "Patient Reported Outcome Measures_I", 1 ],
+[ "Alphacoronavirus 1_P", "Biological Assay_I", 2 ],
+[ "Coronavirus 229E, Human_P", "Patient Reported Outcome Measures_I", 1 ],
+[ "Coronavirus 229E, Human_P", "Real-Time Polymerase Chain Reaction_I", 1 ],
+[ "Coronavirus 229E, Human_P", "Biological Assay_I", 2 ],
+[ "Coronavirus 229E, Human_P", "Reverse Transcriptase Polymerase Chain Reaction_I", 2 ],
+[ "Coronavirus 229E, Human_P", "Polymerase Chain Reaction_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Patient Reported Outcome Measures_I", 2 ],
+[ "Severe Acute Respiratory Syndrome_P", "Enzyme-Linked Immunosorbent Assay_I", 3 ],
+[ "Severe Acute Respiratory Syndrome_P", "Reverse Transcriptase Polymerase Chain Reaction_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Polymerase Chain Reaction_I", 1 ],
+[ "SARS Virus_P", "Polymerase Chain Reaction_I", 3 ],
+[ "SARS Virus_P", "Enzyme-Linked Immunosorbent Assay_I", 5 ],
+[ "SARS Virus_P", "Reverse Transcriptase Polymerase Chain Reaction_I", 3 ],
+[ "SARS Virus_P", "Patient Reported Outcome Measures_I", 2 ],
+[ "SARS Virus_P", "Biological Assay_I", 2 ],
+[ "SARS Virus_P", "Real-Time Polymerase Chain Reaction_I", 2 ],
+[ "SARS Virus_P", "Immunoprecipitation_I", 1 ],
+[ "Patient Reported Outcome Measures_I", "Epidemiologic Measurements_O", 1 ],
+[ "Patient Reported Outcome Measures_I", "Vital Statistics_O", 1 ],
+[ "Patient Reported Outcome Measures_I", "Data Collection_O", 1 ],
+[ "Patient Reported Outcome Measures_I", "Epidemiologic Methods_O", 1 ],
+[ "Patient Reported Outcome Measures_I", "Nidovirales_O", 3 ],
+[ "Patient Reported Outcome Measures_I", "Communicable Diseases_O", 1 ],
+[ "Patient Reported Outcome Measures_I", "Therapeutic Uses_O", 1 ],
+[ "Coronavirus Infections_P", "Reverse Transcriptase Polymerase Chain Reaction_I", 1 ],
+[ "Coronavirus Infections_P", "Biological Assay_I", 2 ],
+[ "Coronavirus Infections_P", "Patient Reported Outcome Measures_I", 2 ],
+[ "Coronavirus Infections_P", "Real-Time Polymerase Chain Reaction_I", 2 ],
+[ "Coronavirus Infections_P", "Enzyme-Linked Immunosorbent Assay_I", 3 ],
+[ "Coronavirus Infections_P", "Polymerase Chain Reaction_I", 2 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Nidovirales_O", 6 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Nidovirales Infections_O", 3 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Epidemiologic Research Design_O", 2 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Sensitivity and Specificity_O", 2 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Epidemiologic Methods_O", 3 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Statistics as Topic_O", 2 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Health Care Evaluation Mechanisms_O", 3 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Leukocytes_O", 1 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Therapeutic Uses_O", 1 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Epidemiologic Measurements_O", 1 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Vital Statistics_O", 1 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Data Collection_O", 1 ],
+[ "Enzyme-Linked Immunosorbent Assay_I", "Communicable Diseases_O", 1 ],
+[ "Coronavirus NL63, Human_P", "Patient Reported Outcome Measures_I", 1 ],
+[ "Alphacoronavirus_P", "High-Throughput Nucleotide Sequencing_I", 1 ],
+[ "Betacoronavirus_P", "High-Throughput Nucleotide Sequencing_I", 1 ],
+[ "Infectious bronchitis virus_P", "Patient Reported Outcome Measures_I", 1 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Nucleic Acid Amplification Techniques_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Epidemiologic Measurements_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Vital Statistics_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Data Collection_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Epidemiologic Methods_O", 4 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Genome_O", 1 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Epidemiologic Research Design_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Sensitivity and Specificity_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Nidovirales_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Statistics as Topic_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Hypersensitivity_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Health Care Evaluation Mechanisms_O", 2 ],
+[ "Reverse Transcriptase Polymerase Chain Reaction_I", "Intestines_O", 1 ],
+[ "Feline Infectious Peritonitis_P", "Real-Time Polymerase Chain Reaction_I", 3 ],
+[ "Feline Infectious Peritonitis_P", "Reverse Transcriptase Polymerase Chain Reaction_I", 1 ],
+[ "Feline Infectious Peritonitis_P", "Biological Assay_I", 1 ],
+[ "Coronavirus, Turkey_P", "Real-Time Polymerase Chain Reaction_I", 1 ],
+[ "Coronavirus, Turkey_P", "Reverse Transcriptase Polymerase Chain Reaction_I", 1 ],
+[ "Coronavirus, Turkey_P", "Polymerase Chain Reaction_I", 1 ],
+[ "Coronavirus_P", "Immunoprecipitation_I", 1 ],
+[ "Chromatography, Gel_I", "Protein Subunits_O", 1 ],
+[ "Gastroenteritis, Transmissible, of Swine_P", "Chromatography, Gel_I", 1 ],
+[ "High-Throughput Nucleotide Sequencing_I", "n/a_O", 0.0001 ],
+[ "Immunoprecipitation_I", "n/a_O", 0.0001 ]
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    

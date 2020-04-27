@@ -1,0 +1,40 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: Coronavirus;Asymptomatic Diseases, Coronavirus Infections;Asymptomatic Diseases</br><strong>Intervention</strong>: -</br><strong>Outcome</strong>:  -</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    

@@ -1,0 +1,107 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: Coronavirus;Diabetes Mellitus, Coronavirus Infections;Diabetes Mellitus</br><strong>Intervention</strong>: -</br><strong>Outcome</strong>:  -</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    [ "Diabetes Mellitus_P", "Nidovirales_I", 3 ],
+[ "Diabetes Mellitus_P", "Nidovirales Infections_I", 1 ],
+[ "Diabetes Mellitus_P", "Medicine_I", 1 ],
+[ "Diabetes Mellitus_P", "Physical and Rehabilitation Medicine_I", 1 ],
+[ "Diabetes Mellitus_P", "Personal Protective Equipment_I", 1 ],
+[ "Diabetes Mellitus_P", "Continuity of Patient Care_I", 1 ],
+[ "Diabetes Mellitus_P", "Disease Outbreaks_I", 1 ],
+[ "Diabetes Mellitus_P", "Protective Devices_I", 1 ],
+[ "Diabetes Mellitus_P", "Rehabilitation_I", 1 ],
+[ "Nidovirales_I", "Epidemiologic Measurements_O", 1 ],
+[ "Nidovirales_I", "Body Weight_O", 1 ],
+[ "Nidovirales_I", "North America_O", 1 ],
+[ "Nidovirales_I", "Vital Statistics_O", 1 ],
+[ "Nidovirales_I", "Asia_O", 1 ],
+[ "Nidovirales_I", "Overnutrition_O", 1 ],
+[ "Nidovirales_I", "Immunomodulation_O", 1 ],
+[ "Nidovirales_I", "Body Weights and Measures_O", 1 ],
+[ "Nidovirales_I", "Overall_O", 1 ],
+[ "Nidovirales_I", "Data Collection_O", 1 ],
+[ "Nidovirales_I", "Glucose Metabolism Disorders_O", 2 ],
+[ "Nidovirales_I", "Epidemiologic Methods_O", 2 ],
+[ "Nidovirales_I", "Immunosuppression_O", 1 ],
+[ "Nidovirales_I", "Diabetes Mellitus_O", 2 ],
+[ "Nidovirales_I", "Nidovirales_O", 2 ],
+[ "Nidovirales_I", "Physical Examination_O", 1 ],
+[ "Nidovirales_I", "Cardiovascular Diseases_O", 1 ],
+[ "Nidovirales_I", "Brain Diseases_O", 1 ],
+[ "Nidovirales_I", "Kidney Diseases_O", 1 ],
+[ "Nidovirales_I", "Death_O", 1 ],
+[ "Nidovirales_I", "Urologic Diseases_O", 1 ],
+[ "Nidovirales_I", "Pericarditis_O", 1 ],
+[ "Nidovirales_I", "Rhabdomyolysis_O", 1 ],
+[ "Nidovirales_I", "Statistics as Topic_O", 1 ],
+[ "Nidovirales_I", "Diagnostic Imaging_O", 1 ],
+[ "Nidovirales_I", "Risk_O", 1 ],
+[ "Nidovirales_I", "Health Care Evaluation Mechanisms_O", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Nidovirales_I", 2 ],
+[ "Nidovirales Infections_I", "Hospital Units_O", 1 ],
+[ "Nidovirales Infections_I", "Death_O", 1 ],
+[ "Nidovirales Infections_I", "Epidemiologic Methods_O", 1 ],
+[ "Nidovirales Infections_I", "Odds Ratio_O", 1 ],
+[ "Nidovirales Infections_I", "Nidovirales Infections_O", 1 ],
+[ "Nidovirales Infections_I", "Statistics as Topic_O", 1 ],
+[ "Nidovirales Infections_I", "Risk_O", 1 ],
+[ "Nidovirales Infections_I", "Health Care Evaluation Mechanisms_O", 1 ],
+[ "Coronavirus Infections_P", "Nidovirales Infections_I", 1 ],
+[ "Medicine_I", "Disease_O", 1 ],
+[ "Physical and Rehabilitation Medicine_I", "Disease_O", 1 ],
+[ "Personal Protective Equipment_I", "Disease_O", 1 ],
+[ "Continuity of Patient Care_I", "Disease_O", 1 ],
+[ "Disease Outbreaks_I", "Disease_O", 1 ],
+[ "Protective Devices_I", "Disease_O", 1 ],
+[ "Rehabilitation_I", "Disease_O", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Medicine_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Physical and Rehabilitation Medicine_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Personal Protective Equipment_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Continuity of Patient Care_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Disease Outbreaks_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Protective Devices_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Rehabilitation_I", 1 ],
+[ "SARS Virus_P", "Medicine_I", 1 ],
+[ "SARS Virus_P", "Physical and Rehabilitation Medicine_I", 1 ],
+[ "SARS Virus_P", "Personal Protective Equipment_I", 1 ],
+[ "SARS Virus_P", "Continuity of Patient Care_I", 1 ],
+[ "SARS Virus_P", "Disease Outbreaks_I", 1 ],
+[ "SARS Virus_P", "Protective Devices_I", 1 ],
+[ "SARS Virus_P", "Rehabilitation_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Nidovirales_I", 1 ]
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    

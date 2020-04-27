@@ -1,0 +1,142 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: Coronavirus;Hypertension, Coronavirus Infections;Hypertension</br><strong>Intervention</strong>: -</br><strong>Outcome</strong>:  -</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    [ "Hypertension_P", "Nidovirales Infections_I", 1 ],
+[ "Hypertension_P", "Chromosome Aberrations_I", 1 ],
+[ "Hypertension_P", "Arteries_I", 1 ],
+[ "Hypertension_P", "Translocation, Genetic_I", 1 ],
+[ "Hypertension_P", "Comment_I", 1 ],
+[ "Hypertension_P", "Reconstructive Surgical Procedures_I", 1 ],
+[ "Hypertension_P", "Surgical Instruments_I", 1 ],
+[ "Hypertension_P", "Africa South of the Sahara_I", 1 ],
+[ "Hypertension_P", "Surgical Fixation Devices_I", 1 ],
+[ "Hypertension_P", "Orthopedic Equipment_I", 1 ],
+[ "Hypertension_P", "Bioprosthesis_I", 1 ],
+[ "Hypertension_P", "Health Personnel_I", 1 ],
+[ "Hypertension_P", "Veins_I", 1 ],
+[ "Hypertension_P", "Surgical Procedures, Operative_I", 1 ],
+[ "Hypertension_P", "Selection, Genetic_I", 1 ],
+[ "Hypertension_P", "Multienzyme Complexes_I", 1 ],
+[ "Hypertension_P", "Research Design_I", 1 ],
+[ "Hypertension_P", "Extracorporeal Membrane Oxygenation_I", 1 ],
+[ "Hypertension_P", "Oxidoreductases_I", 1 ],
+[ "Hypertension_P", "Prolapse_I", 1 ],
+[ "Hypertension_P", "Electromagnetic Radiation_I", 1 ],
+[ "Hypertension_P", "Algorithms_I", 1 ],
+[ "Hypertension_P", "Chordata_I", 1 ],
+[ "Hypertension_P", "Electromagnetic Phenomena_I", 1 ],
+[ "Hypertension_P", "Electrodes_I", 1 ],
+[ "Hypertension_P", "Esophagectomy_I", 1 ],
+[ "Hypertension_P", "Transplants_I", 1 ],
+[ "Hypertension_P", "Electronics_I", 1 ],
+[ "Hypertension_P", "Thorax_I", 1 ],
+[ "Hypertension_P", "Thyroid Hormones_I", 1 ],
+[ "Hypertension_P", "Pericardium_I", 1 ],
+[ "Hypertension_P", "Glycopeptides_I", 1 ],
+[ "Nidovirales Infections_I", "Hospital Units_O", 1 ],
+[ "Nidovirales Infections_I", "Death_O", 1 ],
+[ "Nidovirales Infections_I", "Epidemiologic Methods_O", 1 ],
+[ "Nidovirales Infections_I", "Odds Ratio_O", 1 ],
+[ "Nidovirales Infections_I", "Nidovirales Infections_O", 1 ],
+[ "Nidovirales Infections_I", "Statistics as Topic_O", 1 ],
+[ "Nidovirales Infections_I", "Risk_O", 1 ],
+[ "Nidovirales Infections_I", "Health Care Evaluation Mechanisms_O", 1 ],
+[ "Coronavirus Infections_P", "Nidovirales Infections_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Chromosome Aberrations_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Arteries_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Translocation, Genetic_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Comment_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Reconstructive Surgical Procedures_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Surgical Instruments_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Africa South of the Sahara_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Surgical Fixation Devices_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Orthopedic Equipment_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Bioprosthesis_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Health Personnel_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Veins_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Surgical Procedures, Operative_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Selection, Genetic_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Multienzyme Complexes_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Research Design_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Extracorporeal Membrane Oxygenation_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Oxidoreductases_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Prolapse_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Electromagnetic Radiation_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Algorithms_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Chordata_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Electromagnetic Phenomena_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Electrodes_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Esophagectomy_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Transplants_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Electronics_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Thorax_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Thyroid Hormones_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Pericardium_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Glycopeptides_I", 1 ],
+[ "Algorithms_I", "n/a_O", 0.0001 ],
+[ "Chordata_I", "n/a_O", 0.0001 ],
+[ "Electromagnetic Phenomena_I", "n/a_O", 0.0001 ],
+[ "Electrodes_I", "n/a_O", 0.0001 ],
+[ "Thorax_I", "n/a_O", 0.0001 ],
+[ "Glycopeptides_I", "n/a_O", 0.0001 ],
+[ "Orthopedic Equipment_I", "n/a_O", 0.0001 ],
+[ "Health Personnel_I", "n/a_O", 0.0001 ],
+[ "Electronics_I", "n/a_O", 0.0001 ],
+[ "Arteries_I", "n/a_O", 0.0001 ],
+[ "Africa South of the Sahara_I", "n/a_O", 0.0001 ],
+[ "Multienzyme Complexes_I", "n/a_O", 0.0001 ],
+[ "Bioprosthesis_I", "n/a_O", 0.0001 ],
+[ "Extracorporeal Membrane Oxygenation_I", "n/a_O", 0.0001 ],
+[ "Oxidoreductases_I", "n/a_O", 0.0001 ],
+[ "Research Design_I", "n/a_O", 0.0001 ],
+[ "Prolapse_I", "n/a_O", 0.0001 ],
+[ "Transplants_I", "n/a_O", 0.0001 ],
+[ "Esophagectomy_I", "n/a_O", 0.0001 ],
+[ "Surgical Procedures, Operative_I", "n/a_O", 0.0001 ],
+[ "Comment_I", "n/a_O", 0.0001 ],
+[ "Translocation, Genetic_I", "n/a_O", 0.0001 ],
+[ "Surgical Instruments_I", "n/a_O", 0.0001 ],
+[ "Reconstructive Surgical Procedures_I", "n/a_O", 0.0001 ],
+[ "Chromosome Aberrations_I", "n/a_O", 0.0001 ],
+[ "Veins_I", "n/a_O", 0.0001 ],
+[ "Selection, Genetic_I", "n/a_O", 0.0001 ],
+[ "Thyroid Hormones_I", "n/a_O", 0.0001 ],
+[ "Pericardium_I", "n/a_O", 0.0001 ],
+[ "Surgical Fixation Devices_I", "n/a_O", 0.0001 ],
+[ "Electromagnetic Radiation_I", "n/a_O", 0.0001 ]
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    

@@ -1,0 +1,183 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: Coronavirus, Coronavirus Infections</br><strong>Intervention</strong>: -</br><strong>Outcome</strong>:  Mortality</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    [ "Placebos_I", "Mortality_O", 2 ],
+[ "Placebos_I", "Survival Rate_O", 1 ],
+[ "Blood Proteins_I", "Mortality_O", 5 ],
+[ "Blood Proteins_I", "Survival Rate_O", 4 ],
+[ "Globulins_I", "Mortality_O", 5 ],
+[ "Globulins_I", "Survival Rate_O", 4 ],
+[ "SARS Virus_P", "Placebos_I", 1 ],
+[ "SARS Virus_P", "Blood Proteins_I", 1 ],
+[ "SARS Virus_P", "Globulins_I", 1 ],
+[ "SARS Virus_P", "Adrenal Cortex Hormones_I", 4 ],
+[ "SARS Virus_P", "Nidovirales Infections_I", 3 ],
+[ "SARS Virus_P", "Nidovirales_I", 9 ],
+[ "SARS Virus_P", "Health Personnel_I", 1 ],
+[ "SARS Virus_P", "Vaccines_I", 1 ],
+[ "SARS Virus_P", "Environment, Controlled_I", 1 ],
+[ "SARS Virus_P", "Public Health Practice_I", 1 ],
+[ "SARS Virus_P", "Viral Proteins_I", 1 ],
+[ "SARS Virus_P", "Polyproteins_I", 1 ],
+[ "SARS Virus_P", "Knowledge_I", 1 ],
+[ "SARS Virus_P", "Ions_I", 1 ],
+[ "SARS Virus_P", "Amino Acids, Sulfur_I", 1 ],
+[ "SARS Virus_P", "Ribonucleosides_I", 2 ],
+[ "SARS Virus_P", "Hydrolases_I", 1 ],
+[ "SARS Virus_P", "Cytokines_I", 1 ],
+[ "SARS Virus_P", "Steroids_I", 2 ],
+[ "SARS Virus_P", "Intercellular Signaling Peptides and Proteins_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Nidovirales_I", 14 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Public Health Practice_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Vaccines_I", 2 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Ribonucleosides_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Cytokines_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Intercellular Signaling Peptides and Proteins_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Blood Proteins_I", 2 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Globulins_I", 2 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Extracorporeal Membrane Oxygenation_I", 1 ],
+[ "Nidovirales_I", "Mortality_O", 31 ],
+[ "Nidovirales_I", "Survival Rate_O", 4 ],
+[ "Nidovirales_I", "Hospital Mortality_O", 4 ],
+[ "Porcine epidemic diarrhea virus_P", "Chordata_I", 4 ],
+[ "Porcine epidemic diarrhea virus_P", "Nidovirales_I", 5 ],
+[ "Porcine epidemic diarrhea virus_P", "Blood Proteins_I", 3 ],
+[ "Porcine epidemic diarrhea virus_P", "Globulins_I", 3 ],
+[ "Porcine epidemic diarrhea virus_P", "Ions_I", 1 ],
+[ "Porcine epidemic diarrhea virus_P", "Hydrolases_I", 1 ],
+[ "Porcine epidemic diarrhea virus_P", "Vaccines_I", 2 ],
+[ "Chordata_I", "Mortality_O", 4 ],
+[ "Chordata_I", "Survival Rate_O", 2 ],
+[ "Adrenal Cortex Hormones_I", "Mortality_O", 4 ],
+[ "Severe Acute Respiratory Syndrome_P", "Adrenal Cortex Hormones_I", 4 ],
+[ "Severe Acute Respiratory Syndrome_P", "Environment, Controlled_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Public Health Practice_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Extracorporeal Membrane Oxygenation_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Nidovirales Infections_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Viral Proteins_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Polyproteins_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Knowledge_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Ions_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Amino Acids, Sulfur_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Nidovirales_I", 5 ],
+[ "Severe Acute Respiratory Syndrome_P", "Ribonucleosides_I", 2 ],
+[ "Severe Acute Respiratory Syndrome_P", "Hydrolases_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Cytokines_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Steroids_I", 2 ],
+[ "Severe Acute Respiratory Syndrome_P", "Intercellular Signaling Peptides and Proteins_I", 1 ],
+[ "Public Health Practice_I", "Survival Rate_O", 1 ],
+[ "Public Health Practice_I", "Mortality_O", 2 ],
+[ "Vaccines_I", "Mortality_O", 7 ],
+[ "Ribonucleosides_I", "Hospital Mortality_O", 1 ],
+[ "Ribonucleosides_I", "Mortality_O", 3 ],
+[ "Cytokines_I", "Hospital Mortality_O", 1 ],
+[ "Cytokines_I", "Mortality_O", 2 ],
+[ "Cytokines_I", "Survival Rate_O", 1 ],
+[ "Intercellular Signaling Peptides and Proteins_I", "Hospital Mortality_O", 1 ],
+[ "Intercellular Signaling Peptides and Proteins_I", "Mortality_O", 2 ],
+[ "Intercellular Signaling Peptides and Proteins_I", "Survival Rate_O", 1 ],
+[ "Infectious bronchitis virus_P", "Vaccines_I", 2 ],
+[ "Infectious bronchitis virus_P", "Nidovirales_I", 2 ],
+[ "Infectious bronchitis virus_P", "West Indies_I", 1 ],
+[ "Infectious bronchitis virus_P", "Caribbean Region_I", 1 ],
+[ "Infectious bronchitis virus_P", "Religious Personnel_I", 1 ],
+[ "Nidovirales Infections_I", "Mortality_O", 3 ],
+[ "Coronavirus Infections_P", "Nidovirales Infections_I", 2 ],
+[ "Coronavirus Infections_P", "Nidovirales_I", 5 ],
+[ "Coronavirus Infections_P", "Health Personnel_I", 1 ],
+[ "Coronavirus Infections_P", "Environment, Controlled_I", 1 ],
+[ "Coronavirus Infections_P", "Public Health Practice_I", 1 ],
+[ "Coronavirus Infections_P", "Placebos_I", 1 ],
+[ "Coronavirus Infections_P", "Extracorporeal Membrane Oxygenation_I", 1 ],
+[ "Coronavirus Infections_P", "Pressure_I", 1 ],
+[ "Coronavirus Infections_P", "Viral Proteins_I", 1 ],
+[ "Coronavirus Infections_P", "Polyproteins_I", 1 ],
+[ "Coronavirus Infections_P", "Knowledge_I", 1 ],
+[ "Health Personnel_I", "Mortality_O", 1 ],
+[ "West Indies_I", "Mortality_O", 1 ],
+[ "Caribbean Region_I", "Mortality_O", 1 ],
+[ "Religious Personnel_I", "Mortality_O", 1 ],
+[ "Environment, Controlled_I", "Mortality_O", 1 ],
+[ "Ions_I", "Survival Rate_O", 2 ],
+[ "Ions_I", "Mortality_O", 1 ],
+[ "Extracorporeal Membrane Oxygenation_I", "Mortality_O", 2 ],
+[ "Extracorporeal Membrane Oxygenation_I", "Hospital Mortality_O", 2 ],
+[ "Amino Acids, Neutral_I", "Mortality_O", 1 ],
+[ "Outcome and Process Assessment (Health Care)_I", "Mortality_O", 1 ],
+[ "Health Care Surveys_I", "Mortality_O", 1 ],
+[ "Health Care Evaluation Mechanisms_I", "Mortality_O", 1 ],
+[ "Epidemiologic Methods_I", "Mortality_O", 1 ],
+[ "Amino Acids, Sulfur_I", "Mortality_O", 1 ],
+[ "Amino Acids, Sulfur_I", "Survival Rate_O", 1 ],
+[ "Health Services Research_I", "Mortality_O", 1 ],
+[ "Amino Acids, Essential_I", "Mortality_O", 1 ],
+[ "Data Collection_I", "Mortality_O", 1 ],
+[ "Amino Acids, Branched-Chain_I", "Mortality_O", 1 ],
+[ "Coronavirus NL63, Human_P", "Amino Acids, Neutral_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Nidovirales_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Outcome and Process Assessment (Health Care)_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Health Care Surveys_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Health Care Evaluation Mechanisms_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Epidemiologic Methods_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Amino Acids, Sulfur_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Health Services Research_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Amino Acids, Essential_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Data Collection_I", 1 ],
+[ "Coronavirus NL63, Human_P", "Amino Acids, Branched-Chain_I", 1 ],
+[ "Hydrolases_I", "Mortality_O", 2 ],
+[ "Pressure_I", "Mortality_O", 1 ],
+[ "Alphacoronavirus 1_P", "Chordata_I", 2 ],
+[ "Alphacoronavirus 1_P", "Glycoproteins_I", 1 ],
+[ "Alphacoronavirus 1_P", "Blood Proteins_I", 1 ],
+[ "Alphacoronavirus 1_P", "Globulins_I", 1 ],
+[ "Alphacoronavirus 1_P", "Cytokines_I", 1 ],
+[ "Alphacoronavirus 1_P", "Intercellular Signaling Peptides and Proteins_I", 1 ],
+[ "Alphacoronavirus 1_P", "Nidovirales_I", 1 ],
+[ "Feline Infectious Peritonitis_P", "Chordata_I", 2 ],
+[ "Feline Infectious Peritonitis_P", "Blood Proteins_I", 2 ],
+[ "Feline Infectious Peritonitis_P", "Globulins_I", 2 ],
+[ "Feline Infectious Peritonitis_P", "Glycoproteins_I", 1 ],
+[ "Feline Infectious Peritonitis_P", "Cytokines_I", 1 ],
+[ "Feline Infectious Peritonitis_P", "Intercellular Signaling Peptides and Proteins_I", 1 ],
+[ "Viral Proteins_I", "Mortality_O", 1 ],
+[ "Polyproteins_I", "Mortality_O", 1 ],
+[ "Knowledge_I", "Mortality_O", 1 ],
+[ "Glycoproteins_I", "Survival Rate_O", 1 ],
+[ "Gastroenteritis, Transmissible, of Swine_P", "Placebos_I", 1 ],
+[ "Steroids_I", "Mortality_O", 2 ]
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    

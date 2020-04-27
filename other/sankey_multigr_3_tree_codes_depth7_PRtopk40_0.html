@@ -1,0 +1,153 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: Coronavirus, Coronavirus Infections</br><strong>Intervention</strong>: -</br><strong>Outcome</strong>:  Immunity</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    [ "Vaccines_I", "Immunity, Cellular_O", 6 ],
+[ "Vaccines_I", "Immunity_O", 3 ],
+[ "Vaccines_I", "Immunity, Mucosal_O", 1 ],
+[ "Vaccines_I", "Immunity, Active_O", 1 ],
+[ "Infectious bronchitis virus_P", "Vaccines_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Nidovirales_I", 6 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Chordata_I", 2 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Vaccines_I", 5 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Indian Ocean Islands_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Africa South of the Sahara_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Physiological Effects of Drugs_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Glycoproteins_I", 2 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Membranes_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Genetic Vectors_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Molecular Structure_I", 2 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Animal Population Groups_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Europe, Eastern_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Proteins_I", 2 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Chimera_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Recombinant Proteins_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Nidovirales Infections_I", 2 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Blood Proteins_I", 2 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Mucous Membrane_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Protein S_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Vaccines, Synthetic_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Disease Transmission, Infectious_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Tissue Plasminogen Activator_I", 1 ],
+[ "Middle East Respiratory Syndrome Coronavirus_P", "Hydrolases_I", 1 ],
+[ "Nidovirales_I", "Immunity_O", 2 ],
+[ "Nidovirales_I", "Immunity, Cellular_O", 6 ],
+[ "Nidovirales_I", "Immunity, Humoral_O", 1 ],
+[ "Nidovirales_I", "Immunity, Mucosal_O", 1 ],
+[ "Chordata_I", "Immunity_O", 3 ],
+[ "Chordata_I", "Immunity, Humoral_O", 1 ],
+[ "Chordata_I", "Immunity, Active_O", 1 ],
+[ "Indian Ocean Islands_I", "Immunity_O", 1 ],
+[ "Africa South of the Sahara_I", "Immunity_O", 1 ],
+[ "Africa South of the Sahara_I", "Immunity, Active_O", 1 ],
+[ "Physiological Effects of Drugs_I", "Immunity_O", 2 ],
+[ "Coronavirus Infections_P", "Nidovirales_I", 3 ],
+[ "Coronavirus Infections_P", "Mononegavirales_I", 1 ],
+[ "Coronavirus Infections_P", "Vaccines_I", 2 ],
+[ "Coronavirus Infections_P", "Glycoproteins_I", 2 ],
+[ "Coronavirus Infections_P", "Membranes_I", 1 ],
+[ "Coronavirus Infections_P", "Genetic Vectors_I", 1 ],
+[ "Coronavirus Infections_P", "Molecular Structure_I", 2 ],
+[ "Coronavirus Infections_P", "Recombinant Proteins_I", 1 ],
+[ "Coronavirus Infections_P", "Nidovirales Infections_I", 1 ],
+[ "Coronavirus Infections_P", "Blood Proteins_I", 1 ],
+[ "Coronavirus Infections_P", "Mucous Membrane_I", 1 ],
+[ "Coronavirus Infections_P", "Proteins_I", 1 ],
+[ "Coronavirus Infections_P", "Protein S_I", 1 ],
+[ "Coronavirus Infections_P", "Vaccines, Synthetic_I", 1 ],
+[ "Mononegavirales_I", "Immunity, Cellular_O", 1 ],
+[ "Glycoproteins_I", "Immunity, Humoral_O", 1 ],
+[ "Glycoproteins_I", "Immunity, Cellular_O", 2 ],
+[ "Glycoproteins_I", "Phagocytosis_O", 1 ],
+[ "Glycoproteins_I", "Immunity, Mucosal_O", 1 ],
+[ "Membranes_I", "Immunity, Humoral_O", 1 ],
+[ "Membranes_I", "Immunity, Cellular_O", 1 ],
+[ "Genetic Vectors_I", "Immunity, Humoral_O", 1 ],
+[ "Genetic Vectors_I", "Immunity, Cellular_O", 1 ],
+[ "Molecular Structure_I", "Immunity, Humoral_O", 1 ],
+[ "Molecular Structure_I", "Immunity, Cellular_O", 2 ],
+[ "Molecular Structure_I", "Immunity, Mucosal_O", 1 ],
+[ "Alphacoronavirus 1_P", "Chordata_I", 2 ],
+[ "Alphacoronavirus 1_P", "Vaccines_I", 1 ],
+[ "Alphacoronavirus 1_P", "Recombinant Proteins_I", 1 ],
+[ "Alphacoronavirus 1_P", "Proteins_I", 1 ],
+[ "Alphacoronavirus 1_P", "Africa South of the Sahara_I", 1 ],
+[ "Alphacoronavirus 1_P", "Baculoviridae_I", 1 ],
+[ "Alphacoronavirus 1_P", "Vaccines, Synthetic_I", 1 ],
+[ "Feline Infectious Peritonitis_P", "Chordata_I", 1 ],
+[ "Feline Infectious Peritonitis_P", "Glycoproteins_I", 1 ],
+[ "Feline Infectious Peritonitis_P", "Acids_I", 1 ],
+[ "Acids_I", "Phagocytosis_O", 1 ],
+[ "Betacoronavirus 1_P", "Plant Oils_I", 1 ],
+[ "Betacoronavirus 1_P", "Plant Preparations_I", 1 ],
+[ "Betacoronavirus 1_P", "Vaccines_I", 1 ],
+[ "Betacoronavirus 1_P", "Physiological Effects of Drugs_I", 1 ],
+[ "Plant Oils_I", "Immunity_O", 1 ],
+[ "Plant Preparations_I", "Immunity_O", 1 ],
+[ "Animal Population Groups_I", "Immunity, Humoral_O", 1 ],
+[ "Animal Population Groups_I", "Immunity_O", 1 ],
+[ "Europe, Eastern_I", "Immunity, Humoral_O", 1 ],
+[ "Europe, Eastern_I", "Immunity_O", 1 ],
+[ "Proteins_I", "Immunity, Humoral_O", 1 ],
+[ "Proteins_I", "Immunity_O", 1 ],
+[ "Proteins_I", "Immunity, Mucosal_O", 1 ],
+[ "Proteins_I", "Immunity, Cellular_O", 1 ],
+[ "Proteins_I", "Immunity, Active_O", 1 ],
+[ "Chimera_I", "Immunity, Cellular_O", 1 ],
+[ "Recombinant Proteins_I", "Immunity, Mucosal_O", 1 ],
+[ "Recombinant Proteins_I", "Immunity, Cellular_O", 2 ],
+[ "Recombinant Proteins_I", "Immunity, Active_O", 1 ],
+[ "Nidovirales Infections_I", "Immunity, Mucosal_O", 1 ],
+[ "Nidovirales Infections_I", "Immunity, Cellular_O", 2 ],
+[ "Blood Proteins_I", "Immunity, Mucosal_O", 1 ],
+[ "Blood Proteins_I", "Immunity, Cellular_O", 2 ],
+[ "Mucous Membrane_I", "Immunity, Mucosal_O", 1 ],
+[ "Mucous Membrane_I", "Immunity, Cellular_O", 1 ],
+[ "Protein S_I", "Immunity, Mucosal_O", 1 ],
+[ "Protein S_I", "Immunity, Cellular_O", 1 ],
+[ "Vaccines, Synthetic_I", "Immunity, Mucosal_O", 1 ],
+[ "Vaccines, Synthetic_I", "Immunity, Cellular_O", 2 ],
+[ "Vaccines, Synthetic_I", "Immunity, Active_O", 1 ],
+[ "Baculoviridae_I", "Immunity, Active_O", 1 ],
+[ "SARS Virus_P", "Recombinant Proteins_I", 1 ],
+[ "SARS Virus_P", "Nidovirales_I", 1 ],
+[ "SARS Virus_P", "Vaccines_I", 1 ],
+[ "SARS Virus_P", "Vaccines, Synthetic_I", 1 ],
+[ "Disease Transmission, Infectious_I", "Immunity, Cellular_O", 1 ],
+[ "Tissue Plasminogen Activator_I", "Immunity, Cellular_O", 1 ],
+[ "Hydrolases_I", "Immunity, Cellular_O", 1 ]
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    

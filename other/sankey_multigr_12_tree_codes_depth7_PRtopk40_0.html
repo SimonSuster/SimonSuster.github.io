@@ -1,0 +1,72 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: Coronavirus, Coronavirus Infections</br><strong>Intervention</strong>: Quarantine, Patient Isolation</br><strong>Outcome</strong>:  -</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    [ "Middle East Respiratory Syndrome Coronavirus_P", "Quarantine_I", 1 ],
+[ "Quarantine_I", "Patients_O", 2 ],
+[ "Quarantine_I", "Single Person_O", 1 ],
+[ "Quarantine_I", "Biomarkers_O", 1 ],
+[ "Quarantine_I", "Disease Transmission, Infectious_O", 1 ],
+[ "Quarantine_I", "Sociological Factors_O", 1 ],
+[ "Quarantine_I", "Epidemiologic Measurements_O", 2 ],
+[ "Quarantine_I", "Vital Statistics_O", 2 ],
+[ "Quarantine_I", "Death_O", 2 ],
+[ "Quarantine_I", "Data Collection_O", 2 ],
+[ "Quarantine_I", "Epidemiologic Methods_O", 2 ],
+[ "Quarantine_I", "Neoplastic Processes_O", 1 ],
+[ "Quarantine_I", "Myocardial Contraction_O", 1 ],
+[ "Quarantine_I", "Muscle Contraction_O", 1 ],
+[ "Quarantine_I", "Family_O", 1 ],
+[ "Quarantine_I", "Family Characteristics_O", 1 ],
+[ "Quarantine_I", "Survival_O", 1 ],
+[ "Quarantine_I", "Neoplasm Metastasis_O", 1 ],
+[ "Quarantine_I", "Frustration_O", 1 ],
+[ "Quarantine_I", "Public Health Practice_O", 3 ],
+[ "Quarantine_I", "Confusion_O", 1 ],
+[ "Quarantine_I", "Neurologic Manifestations_O", 1 ],
+[ "Quarantine_I", "Social Behavior_O", 1 ],
+[ "Quarantine_I", "Fear_O", 1 ],
+[ "Quarantine_I", "Boredom_O", 1 ],
+[ "Quarantine_I", "Anger_O", 1 ],
+[ "Quarantine_I", "Neurobehavioral Manifestations_O", 1 ],
+[ "Quarantine_I", "Communicable Diseases_O", 1 ],
+[ "Quarantine_I", "Nidovirales_O", 1 ],
+[ "Quarantine_I", "Disease_O", 1 ],
+[ "Coronavirus Infections_P", "Quarantine_I", 3 ],
+[ "Severe Acute Respiratory Syndrome_P", "Quarantine_I", 4 ],
+[ "SARS Virus_P", "Quarantine_I", 6 ]
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    

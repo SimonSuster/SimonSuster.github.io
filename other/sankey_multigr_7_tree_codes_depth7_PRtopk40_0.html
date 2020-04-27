@@ -1,0 +1,61 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: Coronavirus, Coronavirus Infections</br><strong>Intervention</strong>: Serologic Tests</br><strong>Outcome</strong>:  -</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    [ "Middle East Respiratory Syndrome Coronavirus_P", "Neutralization Tests_I", 2 ],
+[ "Neutralization Tests_I", "Myalgia_O", 1 ],
+[ "Neutralization Tests_I", "Cough_O", 1 ],
+[ "Neutralization Tests_I", "Neurologic Manifestations_O", 1 ],
+[ "Neutralization Tests_I", "Hemorrhage_O", 1 ],
+[ "Neutralization Tests_I", "Signs and Symptoms, Respiratory_O", 1 ],
+[ "Neutralization Tests_I", "Sensation_O", 1 ],
+[ "Neutralization Tests_I", "Chills_O", 1 ],
+[ "Neutralization Tests_I", "Diagnostic Techniques, Respiratory System_O", 1 ],
+[ "Neutralization Tests_I", "Hemoptysis_O", 1 ],
+[ "Neutralization Tests_I", "Signs and Symptoms, Digestive_O", 1 ],
+[ "Neutralization Tests_I", "Dyspnea_O", 1 ],
+[ "Neutralization Tests_I", "Disease Attributes_O", 1 ],
+[ "Neutralization Tests_I", "Pharyngitis_O", 1 ],
+[ "Neutralization Tests_I", "Respiratory Sounds_O", 1 ],
+[ "Neutralization Tests_I", "Muscular Diseases_O", 1 ],
+[ "Neutralization Tests_I", "Death_O", 1 ],
+[ "Neutralization Tests_I", "Sputum_O", 1 ],
+[ "Neutralization Tests_I", "Body Temperature Changes_O", 1 ],
+[ "Neutralization Tests_I", "Nidovirales Infections_O", 1 ],
+[ "Neutralization Tests_I", "Antigens_O", 1 ],
+[ "Coronavirus Infections_P", "Neutralization Tests_I", 1 ]
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    

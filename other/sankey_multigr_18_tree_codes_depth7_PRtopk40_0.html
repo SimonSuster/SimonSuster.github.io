@@ -1,0 +1,142 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: -</br><strong>Intervention</strong>: Masks</br><strong>Outcome</strong>:  -</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    [ "Masks_I", "Time_O", 1 ],
+[ "Masks_I", "Colloids_O", 1 ],
+[ "Masks_I", "Aerosols_O", 1 ],
+[ "Masks_I", "Meteorological Concepts_O", 4 ],
+[ "Masks_I", "Smoke_O", 2 ],
+[ "Masks_I", "Cough_O", 1 ],
+[ "Masks_I", "Signs and Symptoms, Respiratory_O", 2 ],
+[ "Masks_I", "Environment_O", 4 ],
+[ "Masks_I", "Respiration_O", 4 ],
+[ "Masks_I", "Environment, Controlled_O", 1 ],
+[ "Masks_I", "Nidovirales_O", 1 ],
+[ "Masks_I", "Surgical Attire_O", 4 ],
+[ "Masks_I", "Statistics as Topic_O", 4 ],
+[ "Masks_I", "Risk_O", 3 ],
+[ "Masks_I", "Health Care Evaluation Mechanisms_O", 6 ],
+[ "Masks_I", "Masks_O", 4 ],
+[ "Masks_I", "Protective Devices_O", 4 ],
+[ "Masks_I", "Epidemiologic Methods_O", 5 ],
+[ "Masks_I", "Health Personnel_O", 2 ],
+[ "Masks_I", "Disease Transmission, Infectious_O", 4 ],
+[ "Masks_I", "Virus Diseases_O", 1 ],
+[ "Masks_I", "Infection_O", 1 ],
+[ "Masks_I", "Laboratory Infection_O", 1 ],
+[ "Masks_I", "Vaccines_O", 4 ],
+[ "Masks_I", "Laboratories_O", 3 ],
+[ "Masks_I", "Nose_O", 1 ],
+[ "Masks_I", "Face_O", 2 ],
+[ "Masks_I", "Diagnosis_O", 1 ],
+[ "Masks_I", "Neoplasm Metastasis_O", 1 ],
+[ "Masks_I", "Data Collection_O", 1 ],
+[ "Masks_I", "Neoplastic Processes_O", 1 ],
+[ "Masks_I", "Pharynx_O", 1 ],
+[ "Masks_I", "Patients_O", 2 ],
+[ "Masks_I", "Accidents_O", 2 ],
+[ "Masks_I", "Neurologic Manifestations_O", 2 ],
+[ "Masks_I", "Seizures_O", 2 ],
+[ "Masks_I", "Hemodynamics_O", 2 ],
+[ "Masks_I", "Work_O", 2 ],
+[ "Masks_I", "Respiratory Tract Infections_O", 2 ],
+[ "Orthomyxoviridae Infections_P", "Masks_I", 1 ],
+[ "Nidovirales_P", "Masks_I", 3 ],
+[ "Nidovirales Infections_P", "Masks_I", 2 ],
+[ "Communicable Diseases_P", "Masks_I", 3 ],
+[ "Influenza in Birds_P", "Masks_I", 1 ],
+[ "Severe Acute Respiratory Syndrome_P", "Masks_I", 2 ],
+[ "Behavior_P", "Masks_I", 1 ],
+[ "Health Personnel_P", "Masks_I", 8 ],
+[ "Beijing_P", "Masks_I", 2 ],
+[ "Far East_P", "Masks_I", 5 ],
+[ "Epidemiologic Measurements_P", "Masks_I", 2 ],
+[ "Laboratories_P", "Masks_I", 1 ],
+[ "Sociological Factors_P", "Masks_I", 2 ],
+[ "Family_P", "Masks_I", 2 ],
+[ "Vaccines_P", "Masks_I", 2 ],
+[ "Family Characteristics_P", "Masks_I", 2 ],
+[ "Comprehensive Health Care_P", "Masks_I", 1 ],
+[ "Physicians_P", "Masks_I", 2 ],
+[ "Patients_P", "Masks_I", 5 ],
+[ "Asthma_P", "Masks_I", 1 ],
+[ "Population Groups_P", "Masks_I", 1 ],
+[ "Adult_P", "Masks_I", 2 ],
+[ "Child_P", "Masks_I", 2 ],
+[ "Hypersensitivity, Immediate_P", "Masks_I", 1 ],
+[ "Lung Diseases, Obstructive_P", "Masks_I", 1 ],
+[ "Pregnant Women_P", "Masks_I", 1 ],
+[ "Gravidity_P", "Masks_I", 1 ],
+[ "Clinical Study_P", "Masks_I", 1 ],
+[ "Reproduction_P", "Masks_I", 1 ],
+[ "Epidemiologic Factors_P", "Masks_I", 1 ],
+[ "Disease Outbreaks_P", "Masks_I", 1 ],
+[ "Hospitals_P", "Masks_I", 3 ],
+[ "Health Resources_P", "Masks_I", 2 ],
+[ "Health Workforce_P", "Masks_I", 2 ],
+[ "Workforce_P", "Masks_I", 2 ],
+[ "Respiratory Tract Infections_P", "Masks_I", 3 ],
+[ "Nurses_P", "Masks_I", 2 ],
+[ "Nasopharynx_P", "Masks_I", 1 ],
+[ "Emergency Medical Services_P", "Masks_I", 1 ],
+[ "Africa South of the Sahara_P", "Masks_I", 2 ],
+[ "Ambulatory Care Facilities_P", "Masks_I", 1 ],
+[ "Caregivers_P", "Masks_I", 1 ],
+[ "Epidemiologic Methods_P", "Masks_I", 2 ],
+[ "Outpatients_P", "Masks_I", 1 ],
+[ "Health Care Evaluation Mechanisms_P", "Masks_I", 2 ],
+[ "Data Collection_P", "Masks_I", 2 ],
+[ "Respiratory Insufficiency_P", "Masks_I", 1 ],
+[ "Disease Attributes_P", "Masks_I", 1 ],
+[ "Healthy Volunteers_P", "Masks_I", 2 ],
+[ "Personnel, Hospital_P", "Masks_I", 1 ],
+[ "Observational Study_P", "Masks_I", 1 ],
+[ "Health_P", "Masks_I", 1 ],
+[ "Rehabilitation_P", "Masks_I", 1 ],
+[ "Surgical Attire_P", "Masks_I", 1 ],
+[ "Masks_P", "Masks_I", 1 ],
+[ "Protective Devices_P", "Masks_I", 1 ],
+[ "Work_P", "Masks_I", 2 ],
+[ "Societies_P", "Masks_I", 1 ],
+[ "Internal Medicine_P", "Masks_I", 1 ],
+[ "Disease Management_P", "Masks_I", 1 ],
+[ "Infection_P", "Masks_I", 1 ],
+[ "Mononegavirales_P", "Masks_I", 1 ],
+[ "Publications_P", "Masks_I", 1 ],
+[ "Community-Acquired Infections_P", "Masks_I", 1 ]
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    

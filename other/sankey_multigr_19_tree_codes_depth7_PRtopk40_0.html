@@ -1,0 +1,124 @@
+
+    <html>
+    <body>
+    <strong>Population</strong>: -</br><strong>Intervention</strong>: Hand Disinfection</br><strong>Outcome</strong>:  -</br>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    [ "Military Facilities_P", "Hand Disinfection_I", 1 ],
+[ "Hand Disinfection_I", "Epidemiologic Measurements_O", 3 ],
+[ "Hand Disinfection_I", "Hygiene_O", 6 ],
+[ "Hand Disinfection_I", "Vital Statistics_O", 3 ],
+[ "Hand Disinfection_I", "Data Collection_O", 3 ],
+[ "Hand Disinfection_I", "Epidemiologic Methods_O", 4 ],
+[ "Hand Disinfection_I", "Environment_O", 1 ],
+[ "Hand Disinfection_I", "Psychoanalytic Theory_O", 2 ],
+[ "Hand Disinfection_I", "Disease Transmission, Infectious_O", 2 ],
+[ "Hand Disinfection_I", "Personality Development_O", 3 ],
+[ "Hand Disinfection_I", "Psychotherapeutic Processes_O", 1 ],
+[ "Hand Disinfection_I", "Learning_O", 1 ],
+[ "Hand Disinfection_I", "Communicable Diseases_O", 2 ],
+[ "Hand Disinfection_I", "Pediatrics_O", 1 ],
+[ "Hand Disinfection_I", "Vaccines_O", 2 ],
+[ "Hand Disinfection_I", "Laboratories_O", 1 ],
+[ "Hand Disinfection_I", "Mucus_O", 1 ],
+[ "Hand Disinfection_I", "Hydroxides_O", 2 ],
+[ "Hand Disinfection_I", "Ions_O", 2 ],
+[ "Hand Disinfection_I", "Oxides_O", 2 ],
+[ "Hand Disinfection_I", "Drinking Water_O", 2 ],
+[ "Hand Disinfection_I", "Beverages_O", 2 ],
+[ "Hand Disinfection_I", "Psychology, Industrial_O", 1 ],
+[ "Hand Disinfection_I", "Personnel Management_O", 1 ],
+[ "Hand Disinfection_I", "Income_O", 1 ],
+[ "Hand Disinfection_I", "Educational Status_O", 1 ],
+[ "Hand Disinfection_I", "Health_O", 2 ],
+[ "Hand Disinfection_I", "Health Behavior_O", 1 ],
+[ "Hand Disinfection_I", "Preventive Health Services_O", 2 ],
+[ "Hand Disinfection_I", "Research_O", 1 ],
+[ "Hand Disinfection_I", "Intention_O", 1 ],
+[ "Hand Disinfection_I", "Behavior_O", 1 ],
+[ "Hand Disinfection_I", "Disease Outbreaks_O", 1 ],
+[ "Hand Disinfection_I", "Health Education_O", 1 ],
+[ "Hand Disinfection_I", "Upper Extremity_O", 2 ],
+[ "Hand Disinfection_I", "Hand Hygiene_O", 2 ],
+[ "Hand Disinfection_I", "Statistics as Topic_O", 2 ],
+[ "Hand Disinfection_I", "Risk_O", 2 ],
+[ "Hand Disinfection_I", "Health Care Evaluation Mechanisms_O", 2 ],
+[ "Hand Disinfection_I", "Public Health Practice_O", 1 ],
+[ "Facility Design and Construction_P", "Hand Disinfection_I", 1 ],
+[ "Far East_P", "Hand Disinfection_I", 2 ],
+[ "Military Personnel_P", "Hand Disinfection_I", 2 ],
+[ "Research Design_P", "Hand Disinfection_I", 1 ],
+[ "Epidemiologic Research Design_P", "Hand Disinfection_I", 1 ],
+[ "Spain_P", "Hand Disinfection_I", 1 ],
+[ "Vaccines_P", "Hand Disinfection_I", 1 ],
+[ "Work_P", "Hand Disinfection_I", 1 ],
+[ "Disease Outbreaks_P", "Hand Disinfection_I", 1 ],
+[ "Orthomyxoviridae_P", "Hand Disinfection_I", 1 ],
+[ "Patients_P", "Hand Disinfection_I", 1 ],
+[ "Asthma_P", "Hand Disinfection_I", 1 ],
+[ "Child_P", "Hand Disinfection_I", 2 ],
+[ "Hypersensitivity, Immediate_P", "Hand Disinfection_I", 1 ],
+[ "Lung Diseases, Obstructive_P", "Hand Disinfection_I", 1 ],
+[ "Genetic Background_P", "Hand Disinfection_I", 1 ],
+[ "Persons_P", "Hand Disinfection_I", 1 ],
+[ "Personality Development_P", "Hand Disinfection_I", 1 ],
+[ "Adult_P", "Hand Disinfection_I", 1 ],
+[ "Identification (Psychology)_P", "Hand Disinfection_I", 1 ],
+[ "Hygiene_P", "Hand Disinfection_I", 1 ],
+[ "Habits_P", "Hand Disinfection_I", 1 ],
+[ "Students_P", "Hand Disinfection_I", 1 ],
+[ "Geographic Locations_P", "Hand Disinfection_I", 1 ],
+[ "Data Collection_P", "Hand Disinfection_I", 1 ],
+[ "Korea_P", "Hand Disinfection_I", 1 ],
+[ "Attitude_P", "Hand Disinfection_I", 1 ],
+[ "Epidemiologic Methods_P", "Hand Disinfection_I", 1 ],
+[ "Observational Study_P", "Hand Disinfection_I", 1 ],
+[ "Cognition_P", "Hand Disinfection_I", 1 ],
+[ "Psychoanalytic Theory_P", "Hand Disinfection_I", 1 ],
+[ "Health Care Evaluation Mechanisms_P", "Hand Disinfection_I", 1 ],
+[ "Asia, Southeastern_P", "Hand Disinfection_I", 1 ],
+[ "Schools_P", "Hand Disinfection_I", 1 ],
+[ "Students, Health Occupations_P", "Hand Disinfection_I", 1 ],
+[ "Hospitals_P", "Hand Disinfection_I", 1 ],
+[ "Health Personnel_P", "Hand Disinfection_I", 1 ],
+[ "Environment_P", "Hand Disinfection_I", 1 ],
+[ "Meteorological Concepts_P", "Hand Disinfection_I", 1 ],
+[ "Faith-Based Organizations_P", "Hand Disinfection_I", 1 ],
+[ "Workforce_P", "Hand Disinfection_I", 1 ],
+[ "Asia, Western_P", "Hand Disinfection_I", 1 ],
+[ "Religious Missions_P", "Hand Disinfection_I", 1 ],
+[ "International Cooperation_P", "Hand Disinfection_I", 1 ],
+[ "Periodicity_P", "Hand Disinfection_I", 1 ]
+
+        ]);
+
+    // Set chart options
+var options = {
+            width: 1600,
+  height: 1600,
+  title: "CORD",
+  sankey: {
+  link: { colorMode: "none", color: {fillOpacity: 1 } },
+  node: { interactivity:true,}
+  },
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
+    
