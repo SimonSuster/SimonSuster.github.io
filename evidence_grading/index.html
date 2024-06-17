@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Automating the Evaluation of Medical Evidence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Automating the Evaluation of Medical Evidence</h1>
+    <nav>
+        <ul>
+
+            <li><a href="#assessing-medical-evidence-with-predictive-natural-language-processing">Assessing Medical Evidence with Predictive Natural Language Processing</a></li>
+            <li><a href="#advances-with-large-language-models-llms">Advances with Large Language Models (LLMs)</a></li>
+            <li><a href="#can-automated-evidence-assessment-be-trusted">Can Automated Evidence Assessment Be
+                Trusted?</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="assessing-medical-evidence-with-predictive-natural-language-processing">
+        <h2>Assessing Medical Evidence with Predictive Natural Language Processing</h2>
+        <p>Systematic reviews are essential for evidence-based decision-making in medicine, as they synthesise all
+            relevant published evidence on a specific clinical question. However, the process is labour-intensive and
+            time-consuming, often requiring over 1000 hours of manual labour per review. Predictive NLP models, such as
+            those leveraging transformer-based architectures like SciBERT, show promise in automating parts of this
+            process, including the assessment of risk of bias (RoB) and overall quality of evidence. Our developed
+            models can handle heterogeneous inputs—numerical, categorical, and textual data—allowing for a comprehensive
+            evaluation of the evidence. By automating these tasks, NLP can significantly reduce the workload of
+            reviewers, expedite the review process, and help maintain up-to-date systematic reviews, ultimately
+            supporting better-informed clinical decisions.</p>
+
+        <div class="image-container">
+            <a href="images/tasks.png" class="lightbox">
+                <img src="images/tasks.png" alt="Tasks">
+                <div class="overlay">Click to enlarge</div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="images/evidencegrader.png" class="lightbox">
+                <img src="images/evidencegrader.png" alt="EvidenceGRADEr">
+                <div class="overlay">Click to enlarge</div>
+            </a>
+        </div>
+
+        <h3>Noteworthy Publications</h3>
+        <p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/36722350/">Automating Quality Assessment of Medical Evidence in
+                Systematic Reviews: Model Development and Validation Study (EvidenceGRADEr)</a><br/>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/25966488/">Automating Risk of Bias Assessment for Clinical
+                Trials</a></p>
+
+        <h3>Talks</h3>
+        <p>
+            <a href="https://docs.google.com/presentation/d/1Y8DLBJxD2P8wl5K0zPuAM_voDQWDkmfyHcrz1WtwGPI/edit?usp=sharing">Automated
+                quality assessment of medical evidence to support systematic reviewing (MBZUAI, UMass BioNLP,
+                UAntwerpen)</a><br/>
+            <a href="https://youtu.be/ArlSGQbMS9I?list=PLd_MILgMtimZQwubSxBkz_fnvj5JJaYMc&amp;t=179">Using Machine
+                Learning and Natural Language Processing to Structure Medical Evidence and Grade its Quality (MCBK,
+                YouTube)</a></p>
+
+        <h3>Acquiring Data</h3>
+        <p>
+            <a href="https://zenodo.org/records/5653587">EvidenceGRADEr (Zenodo)</a><br/>
+            <a href="https://zenodo.org/records/6908146">RobotReviewer test data (Zenodo)</a></p>
+
+        <h3>Accessing Source Code</h3>
+        <p>
+            <a href="https://bitbucket.org/aimedtech/evidencegrader">EvidenceGRADEr (BitBucket)</a><br/>
+            <a href="https://github.com/ijmarshall/robotreviewer">RobotReviewer (GitHub)</a></p>
+    </section>
+    <hr>
+    <section id="advances-with-large-language-models-llms">
+        <h2>Advances with Large Language Models (LLMs)</h2>
+        <p>In the quest to streamline the assessment of risk of bias (RoB) in clinical trials, generative large language
+            models (LLMs) show significant potential for automating this process. Traditional methods, which rely on
+            supervised learning models, require extensive annotated datasets and have become increasingly outdated with
+            the introduction of the revised RoB2 guidelines. Our research investigates whether LLMs can accurately
+            predict RoB using prompts based on RoB2 guidance without extensive task-specific training data. We evaluated
+            the performance of general and biomedical LLMs across various bias domains, finding that their performance
+            seldom surpasses trivial baselines, indicating that LLMs currently fall short in this task. We highlight the
+            complexity of RoB assessment and suggest that heavier problem decomposition and task-specific adaptations
+            could lead to more accurate predictors, making LLMs viable tools in systematic reviews.</p>
+        <div class="image-container">
+            <a href="images/prompt_construction_algo_horizontal.png" class="lightbox">
+                <img src="images/prompt_construction_algo_horizontal.png" alt="Prompt Construction Algorithm">
+                <div class="overlay">Click to enlarge</div>
+            </a>
+        </div>
+
+        <p>Ongoing work suggests that task-specific fine-tuning of LLMs using Low-Rank Adaptation (LoRA) can lead to
+            performance that, for certain RoB domains, even surpasses existing supervised systems based on pretrained
+            representations. We aim to find out whether fine-tuning allows for using substantially less annotated data
+            to maintain performance comparable to traditional supervised predictors. Additionally, leveraging the more
+            plentiful RoB1 data in a transfer-learning setup could improve performance on RoB2 assessments. </p>
+
+        <h3>Noteworthy Publications</h3>
+        <p>
+            <a href="">Zero- and Few-Shot Generative Large Language Models Are Weak Assessors of Risk of Bias in
+                Clinical Trials</a></p>
+
+        <h3>Acquiring Data</h3>
+        <p>
+            <a href="https://zenodo.org/records/11243025">RoB version 2 (Zenodo)</a></p>
+
+        <h3>Accessing Source Code</h3>
+        <p>
+            <a href="https://bitbucket.org/aimedtech/fewshot_rob/">Zero-Shot Prompting, In-Context Learning, and
+                Task-Specific Fine-Tuning for Risk-of-Bias Assessment</a></p>
+
+    </section>
+    <hr>
+    <section id="can-automated-evidence-assessment-be-trusted">
+        <h2>Can Automated Evidence Assessment Be Trusted?</h2>
+        <p>Our research explores the interplay between trust, reliability, fairness, and debiasing in machine learning
+            models, with a specific focus on systematic reviewing. We found that while debiasing methods are crucial for
+            enhancing fairness by reducing biases linked to socio-economic attributes, they can negatively impact model
+            reliability, particularly in selective classification and out-of-distribution detection tasks. The trade-off
+            between fairness and reliability is significantly influenced by the distribution of target classes and
+            protected attributes in the test set. Specifically, for medical evidence assessment, we find that medical
+            evidence is unequally distributed in both quantity (e.g., across different medical areas) and quality (e.g.,
+            the prevalence of high-quality evidence varies significantly across medical areas). Taking equal opportunity
+            as a fairness principle, all evidence is expected to be assessed with the same accuracy or predictive
+            performance capability, regardless of the protected category to which it belongs. This research demonstrates
+            that techniques such as data rebalancing and training-based methods (e.g., adversarial training) are the
+            most effective in balancing fairness and reliability. Effects of debiasing should be examined not only by
+            looking at aggregate measures of improvement but on all individual protected groups to ensure that a fairer
+            model is not by harming an individual group. For systematic reviewing, this means that when aiming for
+            unbiased quality assessments, it is essential to maintain the predictive performance and reliability of
+            these assessments to preserve the integrity and trustworthiness of the review process.</p>
+        <div class="image-container">
+            <a href="images/recall_gaps_area.png" class="lightbox">
+                <img src="images/recall_gaps_area.png" alt="Recall by Area">
+                <div class="overlay">Click to enlarge</div>
+            </a>
+        </div>
+        <h3>Noteworthy Publications</h3>
+        <p>
+            <a href="https://www.jclinepi.com/article/S0895-4356(23)00091-4/fulltext">Analysis of Predictive Performance
+                and Reliability of Classifiers for Quality Assessment of Medical Evidence Revealed Important Variation
+                by Medical Area</a><br/>
+            <a href="https://aclanthology.org/2023.bionlp-1.39/">Promoting Fairness in Classification of Quality of
+                Medical Evidence</a><br/>
+
+        <h3>Talks</h3>
+        <p><a href="https://simonsuster.github.io/talks/icasr2022.pdf">When to trust a classifier for quality assessment
+            of medical evidence? (ICASR)</a></p>
+    </section>
+
+</main>
+
+</body>
+</html>
+
