@@ -63,8 +63,9 @@ body {
   /*  font */
   font-family: 'Lato', sans-serif;
   line-height: 1.6;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-left: 180px;
+  margin-right: 180px;
+
 }
 
 nav {
@@ -72,15 +73,14 @@ nav {
   height: auto;
     background-color: #e0e0e0;
     padding: 3px;
-    margin-bottom: 20px;
+  margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
     border-radius: 5px; /* Adjust this value to increase or decrease the roundness of the corners */
-
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 nav ul li {
@@ -96,6 +96,14 @@ nav ul li::after {
 
 nav ul li:last-child::after {
   content: "";
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .image-container {
@@ -155,4 +163,10 @@ hr {
   border-top: 3px solid #e0e0e0; /* You can change the color */
   border-radius: 5px;
   margin: 50px 0; /* Adjust margins to suit your needs */
+}
+
+
+footer {
+  font-style: italic;
+  margin-top: 50px;
 }

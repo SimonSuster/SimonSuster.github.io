@@ -11,7 +11,9 @@
 </head>
 <body>
 <header>
-    <h1>Automating the Evaluation of Medical Evidence</h1>
+    <div class="center-image">
+        <img src="images/logo.png" alt="AIMedTech">
+    </div>
     <nav>
         <ul>
 
@@ -21,6 +23,11 @@
                 Trusted?</a></li>
         </ul>
     </nav>
+    <h1>Automating the Assessment of Quality of Medical Evidence</h1>
+    <h3>Core team:</h3>
+    <p><a href="https://simonsuster.github.io/">Simon Suster</a>, <a href="https://mbzuai.ac.ae/study/faculty/timothy-baldwin/">Timothy Baldwin</a>, <a href="https://www.rmit.edu.au/contact/staff-contacts/academic-staff/v/verspoor-professor-karin">Karin Verspoor</a></p>
+    <h3>Extended team:</h3>
+    <p>Yulia Otmakhova, Jey Han Lau, Antonio Jimeno Yepes, David Martinez Iraola, Artem Shelmanov, Xudong Han</p>
 </header>
 <main>
     <section id="assessing-medical-evidence-with-predictive-natural-language-processing">
@@ -29,9 +36,7 @@
             relevant published evidence on a specific clinical question. However, the process is labour-intensive and
             time-consuming, often requiring over 1000 hours of manual labour per review. Predictive NLP models, such as
             those leveraging transformer-based architectures like SciBERT, show promise in automating parts of this
-            process, including the assessment of risk of bias (RoB) and overall quality of evidence. Our developed
-            models can handle heterogeneous inputs—numerical, categorical, and textual data—allowing for a comprehensive
-            evaluation of the evidence. By automating these tasks, NLP can significantly reduce the workload of
+            process, including the assessment of risk of bias (RoB) and overall quality of evidence. Previous work, such as RobotReviewer and Trialstreamer, has successfully demonstrated the potential of NLP in the critical appraisal of randomized controlled trials based on report texts. Our developed models focus on processing larger bodies of evidence using the GRADE framework for problem formalisation. They can handle heterogeneous inputs—numerical, categorical, and textual data—allowing for a comprehensive evaluation of the evidence. By automating these tasks, NLP can significantly reduce the workload of
             reviewers, expedite the review process, and help maintain up-to-date systematic reviews, ultimately
             supporting better-informed clinical decisions.</p>
 
@@ -49,12 +54,10 @@
             </a>
         </div>
 
-        <h3>Noteworthy Publications</h3>
+        <h3>Publications</h3>
         <p>
             <a href="https://pubmed.ncbi.nlm.nih.gov/36722350/">Automating Quality Assessment of Medical Evidence in
                 Systematic Reviews: Model Development and Validation Study (EvidenceGRADEr)</a><br/>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/25966488/">Automating Risk of Bias Assessment for Clinical
-                Trials</a></p>
 
         <h3>Talks</h3>
         <p>
@@ -100,10 +103,14 @@
             to maintain performance comparable to traditional supervised predictors. Additionally, leveraging the more
             plentiful RoB1 data in a transfer-learning setup could improve performance on RoB2 assessments. </p>
 
-        <h3>Noteworthy Publications</h3>
+        <h3>Publications</h3>
         <p>
-            <a href="">Zero- and Few-Shot Generative Large Language Models Are Weak Assessors of Risk of Bias in
-                Clinical Trials</a></p>
+            <a href="">Zero- and Few-Shot Prompting of Generative Large Language Models Provides Weak Assessment of Risk of Bias in Clinical Trials (upcoming)</a></p>
+
+        <h3>Talks</h3>
+        <p>
+            <a href="">Automating risk-of-bias assessment with generative AI (upcoming at Global Evidence Summit)</a><br/>
+        </p>
 
         <h3>Acquiring Data</h3>
         <p>
@@ -140,13 +147,14 @@
                 <div class="overlay">Click to enlarge</div>
             </a>
         </div>
-        <h3>Noteworthy Publications</h3>
+        <h3>Publications</h3>
         <p>
             <a href="https://www.jclinepi.com/article/S0895-4356(23)00091-4/fulltext">Analysis of Predictive Performance
                 and Reliability of Classifiers for Quality Assessment of Medical Evidence Revealed Important Variation
                 by Medical Area</a><br/>
             <a href="https://aclanthology.org/2023.bionlp-1.39/">Promoting Fairness in Classification of Quality of
                 Medical Evidence</a><br/>
+            <a href="https://aclanthology.org/2023.ijcnlp-main.48/">Uncertainty Estimation for Debiased Models: Does Fairness Hurt Reliability?</a></p>
 
         <h3>Talks</h3>
         <p><a href="https://simonsuster.github.io/talks/icasr2022.pdf">When to trust a classifier for quality assessment
@@ -154,7 +162,12 @@
     </section>
 
 </main>
-
+<footer>
+    <hr>
+    <p>
+    The authors would like to acknowledge the Cochrane Collaboration and John Wiley & Sons Limited for providing the source data of the Cochrane Database of Systematic Reviews. This research was funded by the Australian Research Council through an Industrial Transformation Training Center Grant (grant IC170100030).
+    </p>
+</footer>
 </body>
 </html>
 
