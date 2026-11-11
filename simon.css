@@ -117,7 +117,8 @@ a:focus-visible {
 }
 
 /* an empty-string marker (rather than `none`) keeps list semantics in Safari/VoiceOver */
-ul {
+ul,
+ol {
   list-style: "";
   padding: 0;
 }
@@ -166,12 +167,9 @@ ul.plain ul li {
 .portrait {
   float: right;
   margin: 16px 0 0 12px;
-  width: clamp(6rem, 30vw, 11rem);
+  width: clamp(5.5rem, 22vw, 9rem);
   height: auto;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: 50% 30%;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 
 .skip-link {
@@ -204,6 +202,7 @@ ul.plain ul li {
 
 /* Entries: year gutter, hierarchy, secondary links */
 .year li > a:first-child,
+.selected li > a:first-child,
 .talk-title {
   font-weight: 600;
 }
@@ -241,7 +240,62 @@ ul.plain ul li {
   font-size: 90%;
 }
 
+/* Career timeline */
+.timeline {
+  margin: 0;
+}
+
+.timeline li {
+  margin-bottom: 14px;
+}
+
+.when {
+  display: block;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.focus {
+  display: block;
+  color: var(--muted);
+  font-size: 90%;
+}
+
+/* Collapsible full lists */
+details.more {
+  margin-top: 0.4rem;
+}
+
+details.more > summary {
+  cursor: pointer;
+  padding: 0.4rem 0;
+  font-weight: 600;
+}
+
+details.more[open] > summary {
+  margin-bottom: 0.4rem;
+}
+
+.more-link {
+  margin: 0.8rem 0 0;
+  font-weight: 600;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 90%;
+}
+
 @media (min-width: 40em) {
+  .timeline li {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+  }
+
   .year {
     display: grid;
     grid-template-columns: 4.5rem 1fr;
