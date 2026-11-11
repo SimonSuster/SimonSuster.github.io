@@ -71,7 +71,7 @@ body {
 }
 
 .container {
-  max-width: 42em;
+  max-width: 40em;
   margin: 0 auto;
 }
 
@@ -100,13 +100,15 @@ h3 {
 
 a:link,
 a:visited {
-  text-decoration: none;
   color: inherit;
-  border-bottom: 1px solid var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 a:hover {
-  border-bottom-width: 2px;
+  text-decoration-thickness: 2px;
 }
 
 a:focus-visible {
@@ -144,12 +146,16 @@ ul.plain ul li {
   padding-bottom: 12px;
 }
 
-.intro ul {
+.intro ul.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.9rem;
   margin: 8px 0 0;
 }
 
-.intro li {
-  margin-bottom: 4px;
+.intro ul.links li {
+  margin: 0;
+  white-space: nowrap;
 }
 
 .tagline {
@@ -184,9 +190,87 @@ ul.plain ul li {
 }
 
 .toc {
-  margin: 14px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.1rem;
+  margin: 6px 0 0;
+  padding: 0.1rem 0;
+}
+
+.toc a {
+  display: inline-block;
+  padding: 0.4rem 0.2rem;
+}
+
+/* Entries: year gutter, hierarchy, secondary links */
+.year li > a:first-child,
+.talk-title {
+  font-weight: 600;
+}
+
+.authors {
   color: var(--muted);
-  font-size: 95%;
+}
+
+.authors strong {
+  color: var(--text);
+}
+
+.extras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.9rem;
+  font-size: 90%;
+  color: var(--muted);
+}
+
+.extras a {
+  display: inline-block;
+  padding-block: 0.15em;
+}
+
+/* Projects */
+.project-name {
+  display: block;
+  font-weight: 600;
+}
+
+.project-meta {
+  display: block;
+  color: var(--muted);
+  font-size: 90%;
+}
+
+@media (min-width: 40em) {
+  .year {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    margin-top: 0.9rem;
+  }
+
+  .year h3 {
+    margin: 0;
+  }
+
+  .year ul {
+    margin: 0;
+  }
+
+  .year li:last-child {
+    margin-bottom: 0;
+  }
+
+  .toc {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h2 {
+    scroll-margin-top: 3.2rem;
+  }
 }
 
 .venue,
